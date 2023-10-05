@@ -1,0 +1,626 @@
+@import url('./reset.css');
+@import url('./font.css');
+
+body {
+    background-image: url('../img/background.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    background-color: #831f41;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+
+.head .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .navigation ul {
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+}
+
+.head .navigation ul a {
+    color: #ffff;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.head .navigation .fa-solid {
+    color: #ffff;
+}
+
+@media screen and (max-width: 800px) {
+    .head .navigation ul {
+        display: none;
+    }
+
+    .head .navigation ul .fa-solid {
+        display: block;
+    }
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container,
+.section-container,
+.section-center,
+.section-box,
+.section-mini,
+.section-headline,
+.section-check {
+    width: 770px;
+    height: auto;
+    background-color: #831f41;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container h2 {
+    color: #e6e6e6;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container p {
+    color: #e5b9c8;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: normal;
+    width: 650px;
+}
+
+.more {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    background-color: coral;
+    padding: 10px 10px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 40px 0px;
+    border-color: coral;
+}
+
+@media screen and (max-width:730px) {
+
+    .container,
+    .container h2,
+    .container p {
+        width: 300px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container p {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .more {
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .container,
+    .container h2,
+    .container p {
+        width: 250px;
+    }
+
+    .container h2 {
+        font-size: 12px;
+    }
+
+    .container p {
+        width: 150px;
+        font-size: 6px;
+    }
+
+    .more {
+        width: 50px;
+        font-size: 6px;
+    }
+}
+
+.section-container,
+.section-center {
+    margin-top: 20px;
+    background-color: #ffff;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.section-container-cover {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.section-container-cover .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.section-container-cover .menu h2,
+.section-container-cover .restaurant h2 {
+    color: #831f41;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.section-container-cover .menu ul {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.section-container-cover .menu ul li {
+    padding: 15px 0px;
+}
+
+.section-container-cover .menu ul a {
+    color: #831f41;
+}
+
+.section-container-cover .menu .line {
+    width: 190px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #831f41;
+}
+
+.section-container-cover .menu .full-button,
+.section-container-cover .restaurant .reason {
+    font-weight: normal;
+    color: #ffff;
+    background-color: #831f41;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    font-style: italic;
+    padding: 12px 0px;
+    width: 150px;
+    border-color: #831f41;
+}
+
+.section-container .section-container-cover .restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 20px;
+}
+
+.section-container .section-container-cover .restaurant img {
+    margin-top: 20px;
+}
+
+.section-container-cover .restaurant h3 {
+    color: #777777;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.section-container-cover .restaurant p {
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.section-container-cover .restaurant .reason {
+    width: 170px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:730px) {
+
+    .section-container,
+    .section-container-cover {
+        width: 300px;
+    }
+
+    .section-container-cover .menu,
+    .section-container-cover .restaurant {
+        width: 150px;
+    }
+
+    .section-container-cover .menu h2,
+    .section-container-cover .menu ul {
+        font-size: 10px;
+    }
+
+    .section-container-cover .restaurant h2 {
+        font-size: 18px;
+    }
+
+    .section-container-cover .menu .line {
+        width: 100px;
+    }
+
+    .section-container-cover .restaurant p {
+        font-size: 8px;
+    }
+
+    .section-container-cover .menu .full-button,
+    .section-container-cover .restaurant .reason {
+        width: 70px;
+        font-size: 10px;
+    }
+}
+
+.section-center .center-boxing {
+    display: flex;
+}
+
+.section-center .center-boxing img {
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.section-center .center-boxing .boxing {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #666666;
+    padding: 20px 40px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.section-center .center-boxing .boxing h2 {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.section-center .center-boxing .boxing p {
+    color: #dddddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.section-center .center-boxing .more {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:730px) {
+
+    .section-center {
+        width: 300px;
+    }
+
+    .center-boxing {
+        width: 300px;
+        height: 300px;
+    }
+
+    .boxing {
+        width: 200px;
+        height: 300px;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .section-center .center-boxing .boxing h2 {
+        font-size: 6px;
+    }
+
+    .boxing p {
+        font-size: 1px;
+    }
+
+    .boxing .more {
+        width: 100px;
+    }
+}
+
+.section-box {
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.section-box .box-total {
+    display: flex;
+    gap: 20px;
+}
+
+.section-box .box-total .box-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffff;
+    padding: 20px 20px;
+    width: 240px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.section-box .box-total .box-card h2 {
+    color: #831f41;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-box .box-total .box-card p {
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.section-box .box-total .box-card span {
+    color: #831f41;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-box .box-total .box-card .order {
+    color: #ffffff;
+    background-color: #831f41;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border-color: #831f41;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width:730px) {
+
+    .section-box,
+    .box-total {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .box-card {
+        width: 100px;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .box-card h2 {
+        font-size: 8px;
+    }
+
+    .box-card p {
+        font-size: 5px;
+    }
+
+    .box-card span {
+        font-size: 8px;
+    }
+
+    .box-card .order {
+        font-size: 8px;
+        padding: 0px;
+    }
+
+}
+
+.section-mini,
+.section-headline,
+.section-check {
+    background-color: #ffff;
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.section-mini a {
+    text-decoration: underline;
+    color: #831f41;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+@media screen and (max-width:730) {
+    .section-mini {
+        width: 300px;
+    }
+
+    .section-mini a {
+        font-size: 10px;
+    }
+}
+
+.section-headline .headline {
+    display: flex;
+}
+
+.section-headline {
+    padding: 0px;
+}
+
+.section-headline .headline .head-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+    padding-top: 60px;
+}
+
+.section-headline .headline .left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.section-headline .headline .right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.section-headline .headline .head-text h1 {
+    color: #831f41;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-headline .headline .head-text p {
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section-headline .headline .head-text .more {
+    text-transform: capitalize;
+    margin-left: 100px;
+}
+
+.section-check h2 {
+    color: #666666;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.check-box {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.foot {
+    width: 100%;
+    height: 170px;
+    background-color: #831f41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.foot img {
+    border-radius: 20px;
+}
+
+.foot h3 {
+    color: #ffffff;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.contact,
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.contact .site,
+.contact .email {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact a {
+    color: #ffffff;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    margin: 0px 6px;
+}
+
+.icon i {
+    padding: 5px 5px;
+}
